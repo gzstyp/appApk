@@ -1,0 +1,103 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:style/Theme.Light.NoTitleBar"></style>
+    
+    <!-- 顶部控件开始 -->
+    <style name="title.text" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">@dimen/h18</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="title.right.text" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_blue_color</item>
+        <item name="android:textSize">@dimen/h14</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 顶部控件结束 -->
+    
+    <!-- 底部tab开始 -->
+    <style name="tab.text" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@drawable/tabhost_text_color</item>
+        <item name="android:textSize">@dimen/h10</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+     <!-- 底部tab结束 -->
+    
+    <!-- 输入框样式 -->
+    <style name="et_h35">
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">@dimen/h12</item>
+    </style>
+    <!-- 输入框样式 -->
+    <style name="et_h30">
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">@dimen/h12</item>
+    </style>
+    <!-- 输入框样式 -->
+    
+    <!-- 自定义正在加载的dialog -->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_style</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/sheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/sheet_dialog_out</item>
+    </style>
+    <!-- 自定义dialog的布局文件容器 -->
+    <style name="dialog_view_style" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:fitsSystemWindows="true">
+
+    <com.fwtai.widget.TitleBar
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="区域市(州)"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="请选择区域市(州)"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="区域县(区)"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="请选择区域县(区)"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="监测场所类型"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择场所类型"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="冷库类型"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择类型"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="市场名称"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择市场名称"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="摊主姓名"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="输入摊主姓名"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="摊位编号"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="输入摊位编号"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="摊主联系电话"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="输入联系电话"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="产品来源地"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="填写至国家、省、市"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="是否为进口产品"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="请选择选项"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <!--若为进口产品请填写批号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="进口产品批号"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="若为进口产品请填写批号"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="标本名称"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="写明具体标本名称,如三文鱼涂抹物"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="是否冷链相关"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择选项"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="标本类型"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择选项"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="采样日期"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择日期"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="检测日期"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择日期"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="新冠核酸检测结果"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="选择检测结果"
+                        android:lines="1"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_gray_top_bottom2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="备注"
+                        android:gravity="center|left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <EditText
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:hint="备注说明"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:background="@drawable/border_gray_top_left_right2"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="h26">26sp</dimen>
+    <dimen name="h22">22sp</dimen>
+    <dimen name="h20">20sp</dimen>
+    <dimen name="h18">18sp</dimen>
+    <dimen name="h16">16sp</dimen>
+    <dimen name="h14">14sp</dimen>
+    <dimen name="h12">12sp</dimen>
+    <dimen name="h11">11sp</dimen>
+    <dimen name="h10">10sp</dimen>
+    <dimen name="title_bar_height">36dp</dimen>
+    <dimen name="tabs_height">48dp</dimen>
+
+</resources>

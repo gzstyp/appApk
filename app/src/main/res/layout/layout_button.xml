@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.fwtai.widget.TitleBar
+        android:id="@+id/titlebar_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_btn_error"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="错误"
+            android:textSize="@dimen/h12" />
+
+        <Button
+            android:id="@+id/button_btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="成功"
+            android:textSize="@dimen/h14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_btn_theme"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="主题"
+            android:textSize="@dimen/h14" />
+
+        <Button
+            android:id="@+id/button_btn_normal"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="一般"
+            android:textSize="@dimen/h14" />
+        <Button
+            android:id="@+id/button_btn_upgrade"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="版本更新"
+            android:textSize="@dimen/h14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_btn_alert"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="2"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="对话框-单个按钮-没标题"
+            android:textSize="@dimen/h14" />
+
+        <Button
+            android:id="@+id/button_btn_sheet"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="男女下拉列表"
+            android:textSize="@dimen/h14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_btn3"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="读取数据"
+            android:textSize="@dimen/h14" />
+
+        <Button
+            android:id="@+id/button_btns"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="对话框-两个按钮"
+            android:textSize="@dimen/h14" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_btn_alert_title"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/btn_style"
+        android:singleLine="true"
+        android:text="对话框-单个按钮-带标题-有事件"
+        android:textSize="@dimen/h14" />
+
+    <Button
+        android:id="@+id/button_btns_title"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/btn_style"
+        android:singleLine="true"
+        android:text="对话框-两个按钮-带标题"
+        android:textSize="@dimen/h14" />
+
+    <Button
+        android:id="@+id/button_btns_api1"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/btn_style"
+        android:singleLine="true"
+        android:text="封装了对话框-两个按钮-带标题1"
+        android:textSize="@dimen/h14" />
+
+    <Button
+        android:id="@+id/button_btns_api2"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/btn_style"
+        android:singleLine="true"
+        android:text="封装了对话框-两个按钮-带标题2"
+        android:textSize="@dimen/h14" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_btn_dialog1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="自定义对话框布局1"
+            android:textSize="@dimen/h14" />
+
+        <Button
+            android:id="@+id/button_btn_dialog2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:singleLine="true"
+            android:text="自定义对话框布局2"
+            android:textSize="@dimen/h14" />
+    </LinearLayout>
+
+</LinearLayout>

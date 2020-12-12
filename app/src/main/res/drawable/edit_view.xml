@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 失去焦点 -->
+    <item android:drawable="@drawable/edit_view_normal" android:state_window_focused="false"/>
+    <!-- 获取焦点 -->
+    <item android:drawable="@drawable/edit_view_press" android:state_focused="true"/>
+</selector>

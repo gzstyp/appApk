@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <com.fwtai.widget.TitleBar
+        android:id="@+id/titlebar_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et1"
+        style="@style/et_h35"
+        android:layout_width="fill_parent"
+        android:layout_margin="6dp"
+        android:background="@drawable/edit_view"
+        android:textColorHint="@color/et_color_hint" />
+
+    <EditText
+        android:id="@+id/et2"
+        style="@style/et_h35"
+        android:layout_width="fill_parent"
+        android:layout_margin="6dp"
+        android:background="@drawable/edit_view"
+        android:hint="输入框"
+        android:textColorHint="@color/et_color_hint" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp" >
+
+        <EditText
+            android:id="@+id/et3"
+            style="@style/et_h35"
+            android:layout_width="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/edittext_checkBox"
+            android:background="@drawable/edit_view"
+            android:inputType="textPassword"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/et_color_hint" />
+
+        <CheckBox
+            android:id="@+id/edittext_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:button="@drawable/checkbox_pwd_style"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/btn_style"
+        android:singleLine="true"
+        android:text="提交"
+        android:textSize="@dimen/h12" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/btn_style"
+        android:singleLine="true"
+        android:text="确定"
+        android:textSize="@dimen/h14" />
+
+    <CheckBox
+        android:id="@+id/editview_cb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/checkbox_style"
+        android:gravity="center"
+        android:textSize="@dimen/h16" />
+
+</LinearLayout>

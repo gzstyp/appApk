@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 顶部view的背景颜色 -->
+    <color name="view_top_layout_bg">#32cdf6</color>
+    <color name="title_color">#515151</color>
+    <color name="blue_normal">#1171f6</color>
+    <color name="base_blue">#32cdf6</color>
+    <color name="blue_pressed">#0054d2</color>
+    <color name="white">#ffffffff</color> <!-- 白色 -->
+    <color name="stroke">#ffdddddd</color>
+    <color name="gray_transparent">#22000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <!-- dialog的选择项 -->
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#000000</color>
+    <color name="cancel_negative">#ff4500</color><!-- NegativeButton的颜色 -->
+    
+    <!-- 文本输入框的提示文字的颜色值 -->
+    <color name="et_color_hint">#ff5a8963</color>
+    
+</resources>

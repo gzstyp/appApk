@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.fwtai.widget.TitleBar
+        android:id="@+id/titlebar_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_use_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="请操作：" />
+
+    <TextView
+        android:id="@+id/tv_result_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="结果1" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="结果2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_use_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="请求结果" />
+
+            <ImageView
+                android:id="@+id/request_iv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/temp_icon_up" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp" >
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法1-GET方式提交且参数在url里" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法2-POST请求不带参数的或参数在url里 " />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法3-POST请求有带参数" />
+
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法4-POST请求-仅仅只上传文件(含单|多文件)" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法5-上传文件(含单文件|多文件)附加请求参数" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法6-2个并发请求" />
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法7-两个并发线程上传多文件" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法8-Handler处理" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法9-execute1" />
+
+            <Button
+                android:id="@+id/btn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法10-okhhtp上传及下载应用" />
+
+            <Button
+                android:id="@+id/btn_11"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:background="@drawable/btn_bg_blue"
+                android:padding="4dp"
+                android:text="方法11-清空" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.fwtai.widget.TitleBar
+        android:id="@+id/titlebar_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/layout_download_tv_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="未下载" />
+
+    <ProgressBar
+        android:id="@+id/layout_download_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="2dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_blue" />
+
+    <TextView
+        android:id="@+id/layout_download_data"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="请求数据" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/layout_download_get"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="get请求" />
+
+        <TextView
+            android:id="@+id/layout_download_post"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="post请求" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/layout_download_btn_upload"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:padding="4dp"
+            android:text="单文件上传" />
+
+        <Button
+            android:id="@+id/download_btn_time"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:padding="4dp"
+            android:text="定时后操作" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_download_tv_count"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/btn_bg_blue"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="获取验证码倒计时 " />
+
+    <TextView
+        android:id="@+id/layout_download_time"
+        android:layout_width="168dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/btn_bg_blue"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="TimeRunnable倒计时 " />
+
+    <ProgressBar
+        android:id="@+id/upload_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="2dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_blue" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/upload_mutl"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:padding="4dp"
+            android:text="多文件上传" />
+
+        <Button
+            android:id="@+id/upload_mutl_cancel"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:padding="4dp"
+            android:text="取消多文件上传" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:text="走你"
+        android:background="@drawable/bg_box_dialog" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_download_qq"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:padding="4dp"
+            android:text="下载QQ" />
+
+        <Button
+            android:id="@+id/btn_download_del"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_blue"
+            android:padding="4dp"
+            android:text="删除已下载QQ" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_upload_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg_blue"
+        android:padding="4dp"
+        android:text="取消正在下载QQ任务" />
+
+</LinearLayout>

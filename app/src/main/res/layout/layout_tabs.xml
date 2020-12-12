@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_index"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tabs_height"
+        android:layout_weight="1" >
+        <TextView
+            android:id="@+id/tab_tv_index"
+            style="@style/tab.text"
+            android:drawableTop="@drawable/tab_index"
+            android:text="@string/tab_flag_tv_index" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_task"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tabs_height"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_tv_task"
+            style="@style/tab.text"
+            android:drawableTop="@drawable/tab_task"
+            android:text="@string/tab_flag_tv_task" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_release"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tabs_height"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_tv_tv_release"
+            style="@style/tab.text"
+            android:drawableTop="@drawable/tab_release"
+            android:text="@string/tab_flag_tv_release" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_rl_order"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tabs_height"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_tv_person_center"
+            style="@style/tab.text"
+            android:drawableTop="@drawable/tab_order"
+            android:text="@string/tab_flag_tv_order" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/tab_rl_owner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tabs_height"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tab_tv_owner"
+            style="@style/tab.text"
+            android:drawableTop="@drawable/tab_owner"
+            android:text="@string/tab_flag_tv_owner" />
+    </RelativeLayout>
+
+</LinearLayout>

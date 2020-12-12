@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">安卓脚手架</string>
+
+    <!-- tab -->
+    <string name="tab_flag_tv_index">首页</string>
+    <string name="tab_flag_tv_task">任务</string>
+    <string name="tab_flag_tv_release">发布</string>
+    <string name="tab_flag_tv_order">订单</string>
+    <string name="tab_flag_tv_owner">我的</string>
+</resources>
